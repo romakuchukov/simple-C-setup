@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "raylib.h"
 #include "utils.h"
 
@@ -11,7 +10,8 @@ int main(void)
     const int screenHeight = 1200;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-    SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
+    // Set our game to run at 60 frames-per-second
+    SetTargetFPS(60);
     //--------------------------------------------------------------------------------------
     char* text = "Congrats! You created your first window!";
     const int textWidth = MeasureText(text, fontSize);
