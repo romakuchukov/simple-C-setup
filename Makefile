@@ -3,6 +3,9 @@ CFLAGS=`pkg-config --libs --cflags raylib`
 
 all: app
 
+run: app
+	./app
+
 app: utils.o main.o
 	$(CC) $(CFLAGS) utils.o main.o -o app
 
