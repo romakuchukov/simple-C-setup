@@ -9,15 +9,15 @@ int main(void)
     const int screenWidth = 2000;
     const int screenHeight = 1200;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-    // Set our game to run at 60 frames-per-second
-    SetTargetFPS(60);
-    //--------------------------------------------------------------------------------------
     char* text = "Congrats! You created your first window!";
     const int textWidth = MeasureText(text, fontSize);
     const int textCenterX = getCenter(screenWidth, textWidth);
     const int textCenterY = getCenter(screenHeight, fontSize);
 
+    //--------------------------------------------------------------------------------------
+    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    // Set our game to run at 60 frames-per-second
+    SetTargetFPS(60);
     // Main game loop
     // Detect window close button or ESC key
     while (!WindowShouldClose())
